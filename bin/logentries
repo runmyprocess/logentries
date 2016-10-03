@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+import sys
+
+from colorama import init
+
+from logentries import main
+
+init(autoreset=True)
+try:
+   main.start()
+except KeyboardInterrupt:
+    print()
+    print('Bye')
